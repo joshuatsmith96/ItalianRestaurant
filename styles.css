@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 1px 1px 8px 1px;
+}
+
+.mobileList{
+    display: none;
+}
+
+@media all and (max-width: 500px) {
+    nav{
+        padding: 12px;
+    }
+
+    nav p{
+        font-size: 26px;
+        flex: 1;
+    }
+
+    .desktopList{
+        display: none;
+    }
+
+    .mobileButton{
+        flex: .14;
+        margin-right: 20px;
+    }
+
+    .bar{
+        border: solid;
+        margin-bottom: 10px;
+    }
+}
