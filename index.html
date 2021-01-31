@@ -10,17 +10,17 @@
 <header>
     <nav id = "nav">
         <p><strong>Italian</strong> Cuisine</p>
+        <ul class="desktopList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
         <div class="mobileButton" onClick="mobileButtonClick(this)">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <ul class="desktopList">
-            <li><a href="">Home</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
     </nav>
     <div class="mobileMenu" id = "mobileMenu">
         <h1>Main Menu</h1>
@@ -46,6 +46,42 @@
     <div class="aboutUs">
         <h1>Welcome to 'Italian Cuisine'</h1>
         <h2>Local neighborhood business</h2>
+        <p>'Italian Cuisine' has the best italian food in the state. The menu was
+            crafted by our very on Manny Mansetti, a talented chef who has opened
+            up over 10 other locations, with locations in Italy, France, Korea, and
+            now the US.
+        </p>
+    </div>
+    <div class="hours">
+        <h1>Hours of Operation:</h1>
+        <h2>Mon-Friday: 8AM - 11PM</h2>
+        <h2>Sat-Sunday: 8AM - 10PM</h2>
+    </div>
+    <div class="reservation">
+        <div class="resFilter">
+            <div class="resInput">
+                <label for="date">Date:</label>
+                <input name="date" id="date" type="date">
+            </div>
+            <div class="resInput">
+                <label for="time">Time:</label>
+                <input name="time" id="time" type="time">
+            </div>
+            <div class="resInput">
+                <label for="partySize">Party Size:</label>
+                <select name="partySize" id="partySize">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value="more">More</option>
+            </div>
+            <button onClick="findTable()">Find a Table</button>
+        </div>
     </div>
 </body>
 </html>
