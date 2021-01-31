@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <nav>
+<header>
+    <nav id = "nav">
         <p><strong>Italian</strong> Cuisine</p>
-        <div class="mobileButton">
+        <div class="mobileButton" onClick="mobileButtonClick()">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
-        <ul class="mobileList">
-            <li><a href="">Home</a></li>
-            <li><a href="">Menu</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
         <ul class="desktopList">
             <li><a href="">Home</a></li>
             <li><a href="">Menu</a></li>
@@ -27,5 +22,18 @@
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
+    <div class="mobileMenu" id = "mobileMenu">
+        <h1>Mobile Menu</h1>
+        <ul class="desktopList">
+            <li><a href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="spacer"></div>
+</header>
+<body>
+    <h1>HI THERE</h1>
 </body>
 </html>
