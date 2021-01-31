@@ -14,19 +14,43 @@ nav{
     align-items: center;
     width: 100%;
     box-shadow: 1px 1px 8px 1px;
+    background-color: rgb(185, 0, 0);
 }
 
-.mobileList{
+nav p{
+    color: white;
+}
+
+.mobileButton{
+    color: white;
+}
+
+.mobileMenu{
     display: none;
 }
 
+.spacer{
+    height: 70px;
+}
+
+.jumbotron{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+}
+
 @media all and (max-width: 500px) {
+    .mobileMenu{
+        display: block;
+    }
+
     .spacer{
-        height: 65px;
+        height: 66px;
     }
 
     nav{
         padding: 12px;
+        height: 50px;
     }
 
     nav p{
@@ -46,7 +70,6 @@ nav{
     .bar{
         border: solid;
         margin-bottom: 10px;
-        transition: .3s;
         text-align: center;
     }
 
@@ -54,9 +77,48 @@ nav{
         height: 100%;
         width: 70%;
         position: fixed;
-        top: 70px;
+        top: 74px;
         right: 100%;
         background-color: white;
         transition: .3s;
+        text-align: center;
+        background-color: rgb(185, 0, 0);
+    }
+
+    .mobileMenu h1{
+        color: white;
+    }
+
+    .mobileList{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobileList a{
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+    }
+
+    .mobileList li{
+        list-style: none;
+        border-bottom: solid;
+        border-color: rgb(240, 240, 240);
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mobileList li:first-child{
+        margin-top: 10px;
+        border-top: solid;
+        border-color: rgb(240, 240, 240);
+    }
+
+    .jumbotron{
+        height: 400px;
     }
 }

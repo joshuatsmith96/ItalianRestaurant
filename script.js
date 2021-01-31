@@ -1,11 +1,12 @@
 'use strict';
 
 var selector = 1;
-function mobileButtonClick(){
+function mobileButtonClick(thisElement){
     if (selector == 0){
         // Will close the menu
         document.getElementById("mobileMenu").style.right = "100%";
         document.getElementById("nav").style.boxShadow = null;
+        document.getElementById("mobileMenu").style.boxShadow = null;
         outEx();
         selector++;
     } else if (selector == 1) {
@@ -13,6 +14,7 @@ function mobileButtonClick(){
         document.getElementById("mobileMenu").style.right = "30%";
         document.getElementById("mobileMenu").style.boxShadow = "1px 10px 8px -3px";
         document.getElementById("nav").style.boxShadow = "none";
+        document.getElementById("nav").style.height = "50px";
         intoEx();
         selector--;
     }
@@ -23,7 +25,7 @@ function intoEx(){
     var i = 0;
     while (i < 3){
         bar[i].style.margin = "-4px";
-        bar[i].style.color = "rgb(104, 1, 1)";
+        bar[i].style.color = "white";
         i++
     }
     bar[0].style.transform = "rotate(50deg)";
