@@ -172,7 +172,21 @@ nav p{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+} 
+
+.hours{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hours h1{
+    font-size: 45px;
+}
+
+.hours h2{
+    font-size: 30px;
 }
 
 .errorMsg{
@@ -188,6 +202,10 @@ nav p{
     text-align: center;
 }
 
+.imageDrop:hover{
+    cursor: pointer;
+}
+
 .imageDrop h1{
     font-size: 25px;
     padding: 30px;
@@ -198,7 +216,9 @@ nav p{
 .imageContainer{
     height: 0px;
     overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1em;
 }
 
 .imageContainer img{
@@ -206,10 +226,52 @@ nav p{
     flex: 1;
 }
 
+.reservation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation h1{
+    font-size: 40px;
+}
+
+.reservation label{
+    font-size: 23px;
+}
+
+.reservation input{
+    font-size: 23px;
+    padding: 3px;
+}
+
+.reservation select{
+    font-size: 23px;
+    padding: 3px;
+}
+
+.reservation button{
+    font-size: 23px;
+    margin-bottom: 20px;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.errorMsg{
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
 /* MOBILE STYLES */
 @media all and (max-width: 893px) {
     .imageContainer{
-        flex-direction: column;
+        grid-template-columns: 100%;
+        gap: 2px;
     }
 
     .desktopList{
@@ -298,10 +360,6 @@ nav p{
         height: 400px;
     }
 
-    footer{
-        text-align: center;
-    }
-
     /* MOBILE ABOUT US SECTION */
 
     .aboutUs h1{
@@ -332,9 +390,9 @@ nav p{
     .hours{
         text-align: center;
         margin-top: 10px;
-        background-color: rgb(1, 88, 1);
-        color: white;
+        color: black;
         padding: 10px;
+        width: auto;
     }
 
     .hours h1{
@@ -352,6 +410,7 @@ nav p{
         justify-content: center;
         align-items: center;
         padding: 10px;
+        width: auto;
     }
 
     .reservation div{
